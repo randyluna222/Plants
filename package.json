@@ -1,0 +1,29 @@
+{
+  "name": "plants",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "lint": "eslint .",
+      "format": "prettier --write .",
+      "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randyluna222/Plants.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randyluna222/Plants/issues"
+  },
+  "homepage": "https://github.com/randyluna222/Plants#readme",
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "html-webpack-plugin": "^5.5.3",
+    "prettier": "^3.0.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

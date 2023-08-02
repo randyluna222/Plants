@@ -9,6 +9,6 @@ document.getElementById('btnBorrar').addEventListener('click', function() {
 
 generarRadioButtons();
 generarCheckboxes();
-
+showPlantRecommendation();
 
 
