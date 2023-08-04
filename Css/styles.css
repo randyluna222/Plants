@@ -1,0 +1,26 @@
+img{
+  width: 200px;
+}
+
+.information{
+  width: 40%;
+  display: block;
+  border: 140px #9384e2 solid;
+}
+
+.information h2{
+  margin-top: -1px;
+  padding-right: 89px;
+  background-color: #9384e2;
+  color: white;
+}
+
+
+.information p{
+  background-color: #9384e2;
+  color: white;
+  margin: 0 auto;
+  
+}
+
+

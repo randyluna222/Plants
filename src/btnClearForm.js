@@ -1,5 +1,5 @@
 export function btnBorrarFormulario() {
-  const form = document.getElementById('miFormulario');
+  const form = document.getElementById('formContainer');
 
   const inputsTexto = form.querySelectorAll('input[type="text"]');
   inputsTexto.forEach(input => (input.value = ''));
