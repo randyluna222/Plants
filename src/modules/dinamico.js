@@ -1,4 +1,4 @@
- function generarRadioButtons(containerId, opciones) {
+export function generarRadioButtons(containerId, opciones) {
   const radioButtonsContainer = document.getElementById(containerId);
 
   if (!Array.isArray(opciones)) {
@@ -93,4 +93,3 @@
   generarCheckboxes('checkboxesContainer', opcionesCheckbox);
 
 
-  export {generarRadioButtons}

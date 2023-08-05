@@ -62,7 +62,7 @@ function getPlantRecommendation() {
     switch (sunlightValue) {
       case "yes": 
         plantRecommendationBuilder.withSoil("Composted Soil");
-        sunlightValue = "Composted Soil";
+        sunlight.value = "Composted Soil";
         break;
       case "no":
         plantRecommendationBuilder.withSoil("Fertilized Soil");
