@@ -10,20 +10,18 @@ const plantImageNames = {
   "Toxic Plant (Outdoor)": "plant-aloe",
 };
 
+const potImageName = {
+  "minimalism": "painted-ceramic-pot-decorated",
+  "decoration": "painted-clay-pot-decorated",
+  "bright-colors": "simple-ceramic-pot-decorated",
+};
+
 function getPlantImageName(plantName) {
   return plantImageNames[plantName] || "";
 }
 
-function getPotImageName(material, style) {
-  let potName = `simple-${material}-pot`;
-
-  if (style === "decorated") {
-    potName += "-decorated";
-  } else if (style === "bright-colors") {
-    potName = `painted-${material}-pot-decorated`;
-  }
-
-  return potName;
+function getPotImageName(style) {
+  return potImageName[style] || "";
 }
 
 const extraImageNames = {

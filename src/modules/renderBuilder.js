@@ -65,4 +65,3 @@ function renderRecommendation(plant, container) {
 }
 
 export { renderRecommendation };
-

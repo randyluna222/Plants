@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Check</title>
+</head>
+
+<body>
+  <div id="plantPreview" class="checkplantPreview">
+    <h4>Preview de la planta</h4>
+    <img src="" alt="Preview de la planta" id="image-container">
+
+  </div>
+
+  <h1>Plant with custom </h1>
+  <p id="totalPrice"></p>
+
+
+  <div class="accordion" id="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">Price breakdown</div>
+      <div class="accordion-content" id="priceBreakdownList">
+       
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Inventory Alerts</div>
+      <div class="accordion-content" id="inventoryAlertsContent">
+        <div id="inventoryAlert"></div>
+        <button id="orderButton" disabled>Order now!</button>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Plant description</div>
+      <div class="accordion-content">
+        Contenido de la sección 3.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Caring tips</div>
+      <div class="accordion-content">
+        Contenido de la sección 4.
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./src/check.js"></script>
+</body>
+
+</html>

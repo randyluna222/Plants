@@ -91,5 +91,3 @@ export function generarRadioButtons(containerId, opciones) {
   generarRadioButtons('radioButtonsContainer4', opcionesGrupo4);
   generarRadioButtons('radioButtonsContainer5', opcionesGrupo5);
   generarCheckboxes('checkboxesContainer', opcionesCheckbox);
-
-
