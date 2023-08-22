@@ -73,6 +73,7 @@ function renderPreview(data, container) {
   const custom = document.createElement('button');
   custom.textContent = `Check store availability >`;
   custom.id = 'custom-button';
+  plantPreview.className = 'information';
   plantPreview.appendChild(custom);
 
   custom.addEventListener('click', function () {

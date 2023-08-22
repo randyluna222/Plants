@@ -62,6 +62,34 @@ function renderRecommendation(plant, container) {
   }
 
   recommendationContainer.appendChild(information);
+
+  const custom = document.createElement('button');
+  custom.textContent = `Check store availability >`;
+  custom.id = 'custom-button';
+  information.className = 'information';
+  information.appendChild(custom);
+
+  custom.addEventListener('click', function () {
+    const recommendationData = {
+      plantName: (plant.name),
+      soil: plant.soil,
+      pot: getPotImageName(plant.plantStyle),
+      color: getPotImageName(plant.material),
+      extras: plant.extras
+    };
+
+    saveRecommendationData(recommendationData);
+    redirectToCustomView();
+  });
 }
 
 export { renderRecommendation };
+
+export function saveRecommendationData(data) {
+  const serializedData = JSON.stringify(data);
+  localStorage.setItem('recommendationData', serializedData);
+}
+
+export function redirectToCustomView() {
+  window.location.href = 'customizacion.html';
+}
