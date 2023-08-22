@@ -71,7 +71,7 @@ function renderPreview(data, container) {
 
   const custom = document.createElement('button');
   custom.textContent = `< Back to customization`;
-  custom.id = 'custom-button';
+  custom.id = 'custom-buttons';
   plantPreview.appendChild(custom);
 
   custom.addEventListener('click', function () {
