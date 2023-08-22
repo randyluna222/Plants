@@ -30,8 +30,13 @@ function renderRecommendation(plant, container) {
     imageContainer.appendChild(createImageElement(`Assets/${getPotImageName( plant.potColor)}.png`,getPotImageName(plant.potName)));
   }
 
-  if (plant.potMaterial){
-    imageContainer.appendChild(createImageElement(`Assets/${getPotImageName(plant.potMaterial)}.png`, getPotImageName(plant.potName)))
+  const plantStyle = 'decoration';
+  const imageName = getPotImageName(plantStyle);
+  if (imageName !== '') {
+    const imagePath = `assets/${imageName}.png`;
+    const imageElement = document.createElement('img');
+    imageElement.src = imagePath;
+    imageContainer.appendChild(imageElement);
   }
 
   recommendationContainer.appendChild(imageContainer);
@@ -64,7 +69,7 @@ function renderRecommendation(plant, container) {
   recommendationContainer.appendChild(information);
 
   const custom = document.createElement('button');
-  custom.textContent = `Check store availability >`;
+  custom.textContent = `Customize >`;
   custom.id = 'custom-button';
   information.className = 'information';
   information.appendChild(custom);
